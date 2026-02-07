@@ -1,0 +1,22 @@
+{
+  "tool": "extract_entities",
+  "input": {
+    "document_type": "grn",
+    "raw_text": "GRN GRN-5501 | PO: PO-991 | Received: Printer Paper A4, Qty 200 | Warehouse: BLR-01"
+  },
+  "output": {
+    "doc_id": "GRN-5501",
+    "po_id": "PO-991",
+    "grn_id": "GRN-5501",
+    "line_items": [
+      {
+        "description": "Printer Paper A4",
+        "qty": 200
+      }
+    ],
+    "confidence": 0.88,
+    "extraction_notes": [
+      "Parsed GRN id and received quantities."
+    ]
+  }
+}

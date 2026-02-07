@@ -1,0 +1,19 @@
+{
+  "tool": "extract_entities",
+  "input": {
+    "document_type": "invoice",
+    "raw_text": "INVOICE INV-900 | Vendor: Beta Logistics | Date: 2026-01-25 | Total 120000 | Note: Possible duplicate of INV-899"
+  },
+  "output": {
+    "doc_id": "INV-900",
+    "vendor_name": "Beta Logistics",
+    "invoice_id": "INV-900",
+    "invoice_date": "2026-01-25",
+    "currency": "INR",
+    "total": 120000,
+    "confidence": 0.74,
+    "extraction_notes": [
+      "Limited fields found. Line items missing in raw text."
+    ]
+  }
+}

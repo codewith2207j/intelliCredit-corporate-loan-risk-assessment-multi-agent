@@ -1,0 +1,14 @@
+{
+  "tool": "extract_entities",
+  "input": {
+    "document_type": "email",
+    "raw_text": "Subject: Dispute on INV-778. The billed unit price seems higher than agreed PO rate. Please correct and resend."
+  },
+  "output": {
+    "invoice_id": "INV-778",
+    "confidence": 0.66,
+    "extraction_notes": [
+      "Found invoice id in email text; no other structured entities."
+    ]
+  }
+}

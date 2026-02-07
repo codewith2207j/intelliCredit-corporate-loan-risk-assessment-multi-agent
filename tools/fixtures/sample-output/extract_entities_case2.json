@@ -1,0 +1,26 @@
+{
+  "tool": "extract_entities",
+  "input": {
+    "document_type": "po",
+    "raw_text": "PURCHASE ORDER PO-991 | Vendor: Alpha Supplies | Item: Printer Paper A4, Qty 200, Unit 100 | Approved"
+  },
+  "output": {
+    "doc_id": "PO-991",
+    "vendor_name": "Alpha Supplies",
+    "po_id": "PO-991",
+    "currency": "INR",
+    "line_items": [
+      {
+        "sku": "A4-PAPER",
+        "description": "Printer Paper A4",
+        "qty": 200,
+        "unit_price": 100,
+        "line_total": 20000
+      }
+    ],
+    "confidence": 0.9,
+    "extraction_notes": [
+      "Parsed PO header and line item pricing."
+    ]
+  }
+}
